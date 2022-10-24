@@ -32,7 +32,7 @@ In this project, we will bring that style to the photos or recreate the style fr
 [__I’m Something of a Painter Myself__](https://www.kaggle.com/competitions/gan-getting-started/overview), a _kaggle challenge_, was introduced back in 2020 with the aim to mimic _monet style_ like art in a very convincing way with GANs.
 
 
-
+<!-- 
 
 <p align="center">
   <img alt="Decision Modelling Process" width="400" src="extra/assets/decision_modelling_process.png" />
@@ -120,4 +120,4 @@ In order to setup `pre-commit` hooks, please refer to the [documentation](https:
 
 #
 
-<!-- - [📣 Acknowledgments](#acknowledgments) -->
+- [📣 Acknowledgments](#acknowledgments) -->
