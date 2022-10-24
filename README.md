@@ -29,6 +29,7 @@ In this project, we will bring that style to the photos or recreate the style fr
 
 ### 2. 🎨 Kaggle Challenge
 
+> 
 
 
 <p align="center">
