@@ -29,7 +29,7 @@ In this project, we will bring that style to the photos or recreate the style fr
 
 ### 2. 🎨 Kaggle Challenge
 
-[__I’m Something of a Painter Myself__](https://www.kaggle.com/competitions/gan-getting-started/overview), a _kaggle challenge_, was introduced back in 2020 with the aim to mimic 
+[__I’m Something of a Painter Myself__](https://www.kaggle.com/competitions/gan-getting-started/overview), a _kaggle challenge_, was introduced back in 2020 with the aim to mimic monet style like art in a very convincing way via GANs.
 
 
 <p align="center">
