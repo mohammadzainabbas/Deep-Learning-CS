@@ -3,7 +3,7 @@
 ### Table of contents
 
 - [👨🏻‍💻 Introduction](#introduction)
-- [👩🏻‍🎨 Kaggle Challenge](#kaggle-challenge)
+- [🎨 Kaggle Challenge](#kaggle-challenge)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -26,7 +26,7 @@ In this project, we will bring that style to the photos or recreate the style fr
 
 <a id="kaggle-challenge" />
 
-### 2. 👩🏻‍🎨 Kaggle Challenge
+### 2. 🎨 Kaggle Challenge
 
 
 
