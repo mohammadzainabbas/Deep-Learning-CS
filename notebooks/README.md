@@ -4,7 +4,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadzainabbas/Deep-Learning-CS/blob/main/notebooks/CrossAttention.ipynb)
 
-Basic example of using cross-attention based 
+Basic example of using cross attention control with stable diffusion model
+
+Link: 
 
 # 
 
