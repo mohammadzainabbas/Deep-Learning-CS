@@ -3,6 +3,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
+- [Kaggle challenge](#kaggle-challenge)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
