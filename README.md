@@ -19,7 +19,7 @@
 
 We recognize the works of artists through their unique style, such as color choices or brush strokes. The _“je ne sais quoi”_ (I do not know what) of artists like [__Claude Monet__](https://en.wikipedia.org/wiki/Claude_Monet) can now be imitated with image generation algorithms like: generative adversarial networks (GANs) and diffusion models. 
 
-In this getting started competition, you will bring that style to your photos or recreate the style from scratch!
+In this project, we will bring that style to the photos or recreate the style from scratch via duffion model!
 
 #
 
