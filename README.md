@@ -3,7 +3,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
-- [Kaggle challenge](#kaggle-challenge)
+- [💪🏻 Kaggle Challenge](#kaggle-challenge)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -24,9 +24,9 @@ In this project, we will bring that style to the photos or recreate the style fr
 
 #
 
-<a id="about-course" />
+<a id="kaggle-challenge" />
 
-### 2. About the course
+### 2. 💪🏻 Kaggle Challenge
 
 A decision model provides a way to visualize the sequences of events that can occur following alternative decisions (or actions) in a logical framework.
 
