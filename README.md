@@ -2,7 +2,7 @@
 
 ### Table of contents
 
-- [💪🏻 Introduction](#introduction)
+- [👨🏻‍💻 Introduction](#introduction)
 - [👩🏻‍🎨 Kaggle Challenge](#kaggle-challenge)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
@@ -13,7 +13,7 @@
 
 <a id="introduction" />
 
-### 1. Introduction
+### 1. 👨🏻‍💻 Introduction
 
 > _“Every artist dips his brush in his own soul, and paints his own nature into his pictures.”_
 > Henry Ward Beecher
@@ -26,9 +26,9 @@ In this project, we will bring that style to the photos or recreate the style fr
 
 <a id="kaggle-challenge" />
 
-### 2. 💪🏻 Kaggle Challenge
+### 2. 👩🏻‍🎨 Kaggle Challenge
 
-A decision model provides a way to visualize the sequences of events that can occur following alternative decisions (or actions) in a logical framework.
+
 
 <p align="center">
   <img alt="Decision Modelling Process" width="400" src="extra/assets/decision_modelling_process.png" />
