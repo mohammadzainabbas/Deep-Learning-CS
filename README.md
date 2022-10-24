@@ -116,3 +116,5 @@ pip install -r requirements.txt
 In order to setup `pre-commit` hooks, please refer to the [documentation](https://github.com/mohammadzainabbas/DeM-Lab/blob/main/docs/SETUP_PRE-COMMIT_HOOKS.md).
 
 #
+
+<!-- - [📣 Acknowledgments](#acknowledgments) -->
