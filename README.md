@@ -17,7 +17,7 @@
 > _“Every artist dips his brush in his own soul, and paints his own nature into his pictures.”_
 > Henry Ward Beecher
 
-We recognize the works of artists through their unique style, such as color choices or brush strokes. The _“je ne sais quoi”_ of artists like Claude Monet can now be imitated with algorithms thanks to generative adversarial networks (GANs). In this getting started competition, you will bring that style to your photos or recreate the style from scratch!
+We recognize the works of artists through their unique style, such as color choices or brush strokes. The _“je ne sais quoi”_ (I do not know what) of artists like [__Claude Monet__]() can now be imitated with algorithms thanks to generative adversarial networks (GANs). In this getting started competition, you will bring that style to your photos or recreate the style from scratch!
 
 #
 
