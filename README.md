@@ -4,10 +4,10 @@
 
 - [👨🏻‍💻 Introduction](#introduction)
 - [🎨 Kaggle Challenge](#kaggle-challenge)
-- [Setup](#setup)
+<!-- - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
-- [📣 Acknowledgments](#acknowledgments)
+- [📣 Acknowledgments](#acknowledgments) -->
 
 
 #
