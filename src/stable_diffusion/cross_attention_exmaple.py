@@ -1,6 +1,16 @@
 import torch
 from transformers import CLIPModel, CLIPTextModel, CLIPTokenizer
 from diffusers import AutoencoderKL, UNet2DConditionModel
+import numpy as np
+import random
+from PIL import Image
+from diffusers import LMSDiscreteScheduler
+from tqdm.auto import tqdm
+from torch import autocast
+from difflib import SequenceMatcher
+from IPython.display import display
+import requests
+from io import BytesIO
 
 auth_token = input("Huggingface Authentication Token: ")
 
@@ -23,16 +33,7 @@ clip.to(device)
 print("Loaded all models")
 
 #@title Set up code logic
-import numpy as np
-import random
-from PIL import Image
-from diffusers import LMSDiscreteScheduler
-from tqdm.auto import tqdm
-from torch import autocast
-from difflib import SequenceMatcher
-from IPython.display import display
-import requests
-from io import BytesIO
+
 
 def init_attention_weights(weight_tuples):
     tokens_length = clip_tokenizer.model_max_length
