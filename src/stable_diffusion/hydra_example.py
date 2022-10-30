@@ -11,6 +11,7 @@ def main(conf: DictConfig) -> None:
     print_log(f"{conf = }")
     config = OmegaConf.to_yaml(conf, resolve=True)
     print_log(f"{config = }")
+    print(config)
 
 if __name__ == "__main__":
     main()
