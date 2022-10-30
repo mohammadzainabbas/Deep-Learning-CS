@@ -36,7 +36,11 @@ def main(conf: DictConfig) -> None:
     unet = UNet2DConditionModel.from_pretrained(conf.diffusion_model, subfolder="unet", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
     vae = AutoencoderKL.from_pretrained(conf.diffusion_model, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
 
-
+    # Move to GPU (if available)
+    unet = unet.to(device)
+    vae = vae.to(device)
+    clip.to(device)
+    
 
 
     
