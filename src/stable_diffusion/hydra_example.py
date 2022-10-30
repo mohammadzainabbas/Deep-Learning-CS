@@ -1,11 +1,6 @@
 import hydra
-from os.path import join, exists, dirname, abspath, basename, relpath
-from os import getcwd, pardir
+from utils import print_log, config_dir
 from omegaconf import DictConfig, OmegaConf
-
-
-parent_dir = abspath(join(join(join(abspath(__file__), pardir), pardir), pardir))
-config_dir = join(parent_dir, "configs")
 
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
