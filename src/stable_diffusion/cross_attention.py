@@ -47,7 +47,6 @@ def init_attention_weights(weight_tuples):
         if i < tokens_length and i >= 0:
             weights[i] = w
     
-    
     for name, module in unet.named_modules():
         module_name = type(module).__name__
         if module_name == "CrossAttention" and "attn2" in name:
