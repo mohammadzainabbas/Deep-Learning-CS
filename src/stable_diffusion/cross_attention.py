@@ -28,7 +28,7 @@ def main(conf: DictConfig) -> None:
 
     # Initialise CLIP tokenizer and model
     clip_tokenizer = CLIPTokenizer.from_pretrained(conf.clip_model)
-    clip_model = CLIPModel.from_pretrained(model_path_clip, torch_dtype=torch.float16)
+    clip_model = CLIPModel.from_pretrained(conf.clip_model, torch_dtype=torch.float16)
     clip = clip_model.text_model
 
     # Initialise Stable diffusion model
