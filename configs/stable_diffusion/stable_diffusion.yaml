@@ -15,3 +15,4 @@ diffusion_model: CompVis/stable-diffusion-v1-4
 seed: 2483964025
 use_gpu: True
 verbose: True
+show_config: True
