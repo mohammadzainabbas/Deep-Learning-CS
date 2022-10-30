@@ -1,6 +1,6 @@
 ### Hydra
 
-We will use Hydra to
+We will use [Hydra](https://hydra.cc/docs/intro/) to manage all the configurations.
 
 ### OmegaConf
 
