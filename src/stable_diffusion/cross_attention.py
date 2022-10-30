@@ -337,7 +337,7 @@ def main(conf: DictConfig) -> None:
     auth_token = conf.auth_token
 
     # Get CLIP tokenizer and model
-    clip_tokenizer = CLIPTokenizer.from_pretrained(model_path_clip)
+    clip_tokenizer = CLIPTokenizer.from_pretrained(conf.clip_model)
     clip_model = CLIPModel.from_pretrained(model_path_clip, torch_dtype=torch.float16)
     clip = clip_model.text_model
 
