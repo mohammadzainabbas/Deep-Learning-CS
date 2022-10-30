@@ -1,0 +1,26 @@
+name: deep_learning_project
+channels:
+  - apple
+  - conda-forge
+dependencies:
+  - python=3  ## specify desired version
+  - pip
+  - tensorflow-deps
+  - ipykernel  ## for use with Jupyter
+  - transformers
+  - diffusers=0.3.0
+  - pandas
+  - numpy
+  - pillow
+  - tqdm
+  - hydra-core
+  - omegaconf
+
+  ## PyPI packages
+  - pip:
+    - tensorflow-macos
+    - tensorflow-metal  ## optional, but recommended
+    - torch ## if you want to use pytorch as well
+    - torchvision ## if you want to use pytorch as well
+    - matplotlib ## if you want to plot your data
+    - plotly ## if you want to plot your data

@@ -1,7 +1,7 @@
 ### Create new enviornment
 
 ```bash
-mamba env create -n deep_learning_project -f config/env/deep_learning_project_env.yaml
+mamba env create -n deep_learning_project -f config/python_env/deep_learning_project_env.yaml
 ```
 
 ### Hydra
