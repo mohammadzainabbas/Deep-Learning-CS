@@ -7,6 +7,12 @@ dependencies:
   - pip
   - tensorflow-deps
   - ipykernel  ## for use with Jupyter
+  - transformers
+  - diffusers=0.3.0
+  - numpy
+  - pillow
+  - tqdm
+  - pandas
 
   ## PyPI packages
   - pip:
@@ -16,5 +22,3 @@ dependencies:
     - torchvision ## if you want to use pytorch as well
     - matplotlib ## if you want to plot your data
     - plotly ## if you want to plot your data
-    - pandas
-    - numpy
