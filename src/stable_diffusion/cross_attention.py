@@ -325,8 +325,8 @@ display(*[init_img, eyesclosed])
 import hydra
 from os.path import join
 
-hydra.main(config_path="../")
-def main():
+hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion")
+def main(conf):
 
 
 if __name__ == "__main__":
