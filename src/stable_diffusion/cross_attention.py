@@ -336,12 +336,15 @@ def main(conf: DictConfig) -> None:
     # Huggingface Authentication Token
     auth_token = conf.auth_token
 
-    # Get CLIP tokenizer and model
+    # Initialise CLIP tokenizer and model
     clip_tokenizer = CLIPTokenizer.from_pretrained(conf.clip_model)
     clip_model = CLIPModel.from_pretrained(model_path_clip, torch_dtype=torch.float16)
     clip = clip_model.text_model
 
-    
+    # Initialise Stable diffusion model
+    unet = UNet2DConditionModel.from_pretrained(model_path_diffusion, subfolder="unet", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
+    vae = AutoencoderKL.from_pretrained(model_path_diffusion, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
+
 
     
 
