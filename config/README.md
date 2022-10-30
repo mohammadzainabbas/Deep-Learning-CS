@@ -1,4 +1,4 @@
-### Create new env
+### Create new enviornment
 
 ```bash
 mamba env create -n deep_learning_project -f config/env/deep_learning_project_env.yaml
