@@ -337,7 +337,7 @@ def main(conf: DictConfig) -> None:
     auth_token = conf.auth_token
 
     # Get CLIP tokenizer and model
-    clip, clip_model, clip_tokenizer = 
+    
 
     
 
