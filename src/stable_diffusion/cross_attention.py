@@ -324,13 +324,14 @@
 
 import hydra
 from os.path import join
-from omegaconf import DictConfig
+from omegaconf import DictConfig, OmegaConf
 
 def print_log(text: str): print(f"[ log ]: {text}")
 def print_error(text: str): print(f"[ error ]: {text}")
 
 hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion", version_base="1.1")
-def main(conf: DictConfig):
+def main(conf: DictConfig) -> None:
+
     print_log(f"{conf = }")
 
 if __name__ == "__main__":
