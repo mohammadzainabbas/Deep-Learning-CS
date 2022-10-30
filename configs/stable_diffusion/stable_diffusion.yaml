@@ -1,4 +1,4 @@
-auth_token: abc
+auth_token: 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
 
 
 _target_: sce.models.trunks.create_resnet
