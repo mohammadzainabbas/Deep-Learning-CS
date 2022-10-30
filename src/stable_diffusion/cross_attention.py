@@ -17,6 +17,24 @@ from IPython.display import display
 import requests
 from io import BytesIO
 
+
+def init_attention_weights(weight_tuples):
+    tokens_length = clip_tokenizer.model_max_length
+    weights = torch.ones(tokens_length)
+    
+    for i, w in weight_tuples:
+        if i < tokens_length and i >= 0:
+            weights[i] = w
+    
+    
+    for name, module in unet.named_modules():
+        module_name = type(module).__name__
+        if module_name == "CrossAttention" and "attn2" in name:
+            module.last_attn_slice_weights = weights.to(device)
+        if module_name == "CrossAttention" and "attn1" in name:
+            module.last_attn_slice_weights = None
+    
+
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
 
