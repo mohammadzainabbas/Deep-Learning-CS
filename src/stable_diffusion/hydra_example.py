@@ -6,7 +6,8 @@ from omegaconf import DictConfig, OmegaConf
 def print_log(text: str): print(f"[ log ]: {text}")
 def print_error(text: str): print(f"[ error ]: {text}")
 
-parent_dir = abspath(join(join(getcwd(), pardir), pardir))
+# parent_dir = dirname(dirname(abspath(__file__)))
+parent_dir = abspath(join(join(abspath(__file__), pardir), pardir))
 
 print_log(f"{parent_dir = }")
 # config_dir = join(, "config")
