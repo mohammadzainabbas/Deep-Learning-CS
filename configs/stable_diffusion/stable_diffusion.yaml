@@ -1,0 +1,18 @@
+# Hugging face
+
+auth_token: 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
+
+# CLIP tokenizer and model
+
+clip_model: openai/clip-vit-large-patch14
+
+# Stable diffusion model
+
+diffusion_model: CompVis/stable-diffusion-v1-4
+
+# Defaults
+
+seed: 2483964025
+use_gpu: True
+verbose: True
+show_config: True
