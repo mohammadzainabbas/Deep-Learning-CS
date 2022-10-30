@@ -332,6 +332,7 @@ def print_error(text: str): print(f"[ error ]: {text}")
 hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion", version_base="1.1")
 def main(conf: DictConfig) -> None:
 
+    resolved_config = OmegaConf.to_yaml(conf, resolve=True)
     print_log(f"{conf = }")
 
 if __name__ == "__main__":
