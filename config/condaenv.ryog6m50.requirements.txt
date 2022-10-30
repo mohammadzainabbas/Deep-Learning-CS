@@ -1,6 +1,0 @@
-tensorflow-macos
-tensorflow-metal
-torch
-torchvision
-matplotlib
-plotly
