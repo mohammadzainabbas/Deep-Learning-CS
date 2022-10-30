@@ -331,8 +331,10 @@ display(*[init_img, eyesclosed])
 def main(conf: DictConfig) -> None:
 
     verbose = conf.get("verbose", False) 
+    if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
 
-    if verbose: print_log(f"Configurations loaded via Hydra!\n{conf = }")
+    
+
     
 
 if __name__ == "__main__":
