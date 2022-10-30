@@ -13,6 +13,8 @@ dependencies:
   - numpy
   - pillow
   - tqdm
+  - omegaconf
+  - hydra
 
   ## PyPI packages
   - pip:
