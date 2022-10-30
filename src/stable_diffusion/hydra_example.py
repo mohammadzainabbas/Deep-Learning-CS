@@ -12,4 +12,4 @@ def main(conf: DictConfig) -> None:
     print_log(f"{config = }")
 
 if __name__ == "__main__":
-    main(None)
+    main()
