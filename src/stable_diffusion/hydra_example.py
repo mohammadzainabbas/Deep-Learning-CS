@@ -9,6 +9,7 @@ def print_error(text: str): print(f"[ error ]: {text}")
 def main(conf: DictConfig) -> None:
 
     print_log(f"{conf = }")
+    print_log(f"{OmegaConf.to_yaml(conf) = }")
 
 if __name__ == "__main__":
     main()
