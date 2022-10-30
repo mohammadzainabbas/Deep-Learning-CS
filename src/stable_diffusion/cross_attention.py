@@ -322,6 +322,13 @@ eyesclosed = stablediffusion(
   )
 display(*[init_img, eyesclosed])
 
+import hydra
+from os.path import join
+
+hydra.main(config_path="../")
+def main():
+
+
 if __name__ == "__main__":
     main()
 
