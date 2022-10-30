@@ -3,7 +3,10 @@
 auth_token: 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
 
 # CLIP tokenizer and model
-clip_model: 
+
+clip_model: openai/clip-vit-large-patch14
+
+# Stable diffusion model
 
 _target_: sce.models.trunks.create_resnet
 name: resnet18
