@@ -1,6 +1,6 @@
 ## Notebooks 👨🏻‍💻
 
-### Demo 
+### Project Demo 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadzainabbas/Deep-Learning-CS/blob/main/notebooks/Demo.ipynb)
 
