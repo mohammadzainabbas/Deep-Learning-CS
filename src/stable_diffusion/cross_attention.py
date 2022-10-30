@@ -32,8 +32,8 @@ def main(conf: DictConfig) -> None:
     clip = clip_model.text_model
 
     # Initialise Stable diffusion model
-    unet = UNet2DConditionModel.from_pretrained(model_path_diffusion, subfolder="unet", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
-    vae = AutoencoderKL.from_pretrained(model_path_diffusion, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
+    unet = UNet2DConditionModel.from_pretrained(conf.diffusion_model, subfolder="unet", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
+    vae = AutoencoderKL.from_pretrained(conf.diffusion_model, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
 
 
     
