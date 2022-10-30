@@ -322,6 +322,7 @@ eyesclosed = stablediffusion(
   )
 display(*[init_img, eyesclosed])
 
-
+if __name__ == "__main__":
+    main()
 
 
