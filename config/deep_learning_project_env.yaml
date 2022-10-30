@@ -1,4 +1,4 @@
-name: machine_learning_project
+name: deep_learning_project
 channels:
   - apple
   - conda-forge
