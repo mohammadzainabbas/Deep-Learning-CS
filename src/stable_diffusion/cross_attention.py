@@ -20,8 +20,7 @@ from io import BytesIO
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
 
-    verbose = conf.get("verbose", False)
-    show_config = conf.get("show_config", False)
+    verbose, show_config = conf.get("verbose", False), conf.get("show_config", False)
     if show_config: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
     
     device = "cuda" if torch.cuda.is_available() and conf.get("use_gpu", True) else "cpu"
