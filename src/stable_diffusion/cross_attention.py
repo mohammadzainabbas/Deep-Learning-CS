@@ -37,10 +37,11 @@ def main(conf: DictConfig) -> None:
     vae = AutoencoderKL.from_pretrained(conf.diffusion_model, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
 
     # Move to GPU (if available)
-    unet.to(device)
-    vae.to(device)
-    clip.to(device)
+    unet = unet.to(device)
+    vae = vae.to(device)
+    clip = clip.to(device)
 
+    if verbose: print_log(f"CLIP and diffusion model loaded")
 
 
     
