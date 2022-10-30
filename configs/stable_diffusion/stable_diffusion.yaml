@@ -1,3 +1,6 @@
+auth_token: abc
+
+
 _target_: sce.models.trunks.create_resnet
 name: resnet18
 num_classes: 0
