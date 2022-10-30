@@ -15,6 +15,7 @@ dependencies:
   - tqdm
   - hydra-core
   - omegaconf
+  - notebook
 
   ## PyPI packages
   - pip:
