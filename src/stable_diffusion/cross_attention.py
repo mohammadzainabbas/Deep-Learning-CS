@@ -1,3 +1,4 @@
+from tabnanny import verbose
 import torch
 from transformers import CLIPModel, CLIPTextModel, CLIPTokenizer
 from diffusers import AutoencoderKL, UNet2DConditionModel
@@ -329,8 +330,9 @@ display(*[init_img, eyesclosed])
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
 
-    if conf.get("verbose", False):
-        print_log(f"{conf = }")
+    verbose = conf.get("verbose", False) 
+
+    if verbose: print_log(f"Configruatiins {conf = }")
     
 
 if __name__ == "__main__":
