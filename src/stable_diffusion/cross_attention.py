@@ -20,7 +20,8 @@ from io import BytesIO
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
 
-    verbose = conf.get("verbose", False) 
+    verbose = conf.get("verbose", False)
+    device = "cuda" if torch.cuda.is_available() and conf.get("verbose", False) else "cpu"
     if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
 
     # Huggingface Authentication Token
@@ -35,7 +36,7 @@ def main(conf: DictConfig) -> None:
     unet = UNet2DConditionModel.from_pretrained(conf.diffusion_model, subfolder="unet", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
     vae = AutoencoderKL.from_pretrained(conf.diffusion_model, subfolder="vae", use_auth_token=auth_token, revision="fp16", torch_dtype=torch.float16)
 
-    
+
 
 
     
