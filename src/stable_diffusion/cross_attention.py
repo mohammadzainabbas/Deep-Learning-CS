@@ -302,5 +302,13 @@ girl = stablediffusion(personprompt, personprompt.replace("boy", "girl"), seed=s
 
 display(*[boy, girl])
 
+man = stablediffusion(personprompt, personprompt.replace("boy", "man"), prompt_edit_token_weights=[(3, 10)], seed=seed)
+dry = stablediffusion(personprompt, personprompt.replace("green", "dry"), seed=seed)
+watercolor = stablediffusion(personprompt, "a watercolor painting of " + personprompt, seed=seed)
+
+display(*[man, dry, watercolor])
+
+womanprompt = "A photo of a young woman with red hair, a closed mouth, pale skin and open eyes"
+
 
 
