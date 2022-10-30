@@ -20,9 +20,11 @@ from io import BytesIO
 @hydra.main(config_path=join(config_dir, "stable_diffusion"), config_name="stable_diffusion", version_base=None)
 def main(conf: DictConfig) -> None:
 
-    device = "cuda" if torch.cuda.is_available() and conf.get("use_gpu", True) else "cpu"
     verbose = conf.get("verbose", False)
     if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
+    
+    device = "cuda" if torch.cuda.is_available() and conf.get("use_gpu", True) else "cpu"
+    if verbose: print_log(f"Using device: {device}")
 
     # Huggingface Authentication Token
     auth_token = conf.auth_token
