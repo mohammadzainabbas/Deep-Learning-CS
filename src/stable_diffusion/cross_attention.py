@@ -324,9 +324,10 @@ display(*[init_img, eyesclosed])
 
 import hydra
 from os.path import join
+from omegaconf import DictConfig
 
 hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion")
-def main(conf):
+def main(conf: DictConfig):
 
 
 if __name__ == "__main__":
