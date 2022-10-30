@@ -24,7 +24,7 @@ def main(conf: DictConfig) -> None:
     if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
     
     device = "cuda" if torch.cuda.is_available() and conf.get("use_gpu", True) else "cpu"
-    if verbose: print_log(f"Using device: {device}")
+    if verbose: print_log(f"Using {device = }")
 
     # Huggingface Authentication Token
     auth_token = conf.auth_token
