@@ -1,10 +1,17 @@
 ## Notebooks 👨🏻‍💻
 
-### Demo 
+### Project Demo 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadzainabbas/Deep-Learning-CS/blob/main/notebooks/Demo.ipynb)
 
-Demo for generating images via stable diffusion
+Demo for generating monet-style images with stable diffusion
+# 
+
+### Demo - Stable Diffusion
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadzainabbas/Deep-Learning-CS/blob/main/notebooks/DemoDiffusionModel.ipynb)
+
+Demo for generating images with stable diffusion
 
 # 
 ### Cross Attention 
