@@ -331,7 +331,7 @@ def print_error(text: str): print(f"[ error ]: {text}")
 
 hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion")
 def main(conf: DictConfig):
-    print_log(f"")
+    print_log(f"{conf = }")
 
 
 if __name__ == "__main__":
