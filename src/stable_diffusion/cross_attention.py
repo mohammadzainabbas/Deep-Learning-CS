@@ -329,7 +329,7 @@ from omegaconf import DictConfig
 def print_log(text: str): print(f"[ log ]: {text}")
 def print_error(text: str): print(f"[ error ]: {text}")
 
-hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion", version_base="1.0")
+hydra.main(config_path="../../configs/stable_diffusion", config_name="stable_diffusion", version_base="1.1")
 def main(conf: DictConfig):
     print_log(f"{conf = }")
 
