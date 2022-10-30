@@ -285,3 +285,22 @@ seed = 2483964025
 
 show_token_indices(prompt)
 
+
+base = stablediffusion(prompt, seed=seed)
+lesspine = stablediffusion(prompt, prompt_edit_token_weights=[(6, -17)], seed=seed) # make the tree less "pine"
+lessfantasy = stablediffusion(prompt, prompt_edit_token_weights=[(2, -8)], seed=seed) # make the landscape less "fantasy"
+imgs = [base, lesspine, lessfantasy]
+display(*imgs)
+
+personprompt = "A young boy playing in a field, on a hill overlooking a green valley"
+seed = 115
+show_token_indices(personprompt)
+
+boy = stablediffusion(personprompt, seed=seed)
+girl = stablediffusion(personprompt, personprompt.replace("boy", "girl"), seed=seed)
+
+
+display(*[boy, girl])
+
+
+
