@@ -41,7 +41,7 @@ def main(conf: DictConfig) -> None:
     vae = vae.to(device)
     clip = clip.to(device)
 
-    if verbose: print_log(f"CLIP and diffusion model loaded")
+    if verbose: print_log(f"CLIP and diffusion models loaded")
 
 
     
