@@ -333,7 +333,7 @@ def main(conf: DictConfig) -> None:
     verbose = conf.get("verbose", False) 
     if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
 
-    
+    # Auth
 
     
 
