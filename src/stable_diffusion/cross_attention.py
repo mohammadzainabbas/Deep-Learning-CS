@@ -310,5 +310,8 @@ display(*[man, dry, watercolor])
 
 womanprompt = "A photo of a young woman with red hair, a closed mouth, pale skin and open eyes"
 
+response = requests.get('https://raw.githubusercontent.com/Lewington-pitsos/koiboi-misc/main/woman.jpg')
+init_img = Image.open(BytesIO(response.content))
+
 
 
