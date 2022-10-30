@@ -313,5 +313,14 @@ womanprompt = "A photo of a young woman with red hair, a closed mouth, pale skin
 response = requests.get('https://raw.githubusercontent.com/Lewington-pitsos/koiboi-misc/main/woman.jpg')
 init_img = Image.open(BytesIO(response.content))
 
+eyesclosed = stablediffusion(
+    womanprompt,  
+    womanprompt.replace("open", "closed"), 
+    seed=seed, 
+    init_image=init_img,
+    init_image_strength=0.65 
+  )
+display(*[init_img, eyesclosed])
+
 
 
