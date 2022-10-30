@@ -280,3 +280,8 @@ def show_token_indices(prompt):
         if decoded_token == "<|endoftext|>":
             break
 
+prompt = "A fantasy landscape with a pine tree in the foreground and a red sun setting in the distance, trending on artstation"
+seed = 2483964025
+
+show_token_indices(prompt)
+
