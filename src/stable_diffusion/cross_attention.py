@@ -21,7 +21,8 @@ from io import BytesIO
 def main(conf: DictConfig) -> None:
 
     verbose = conf.get("verbose", False)
-    if verbose: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
+    show_config = conf.get("show_config", False)
+    if show_config: print_log(f"Configurations loaded via Hydra!\n\n{conf = }\n\n")
     
     device = "cuda" if torch.cuda.is_available() and conf.get("use_gpu", True) else "cpu"
     if verbose: print_log(f"Using {device = }")
