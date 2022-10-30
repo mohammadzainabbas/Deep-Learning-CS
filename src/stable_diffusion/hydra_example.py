@@ -7,6 +7,9 @@ def print_log(text: str): print(f"[ log ]: {text}")
 def print_error(text: str): print(f"[ error ]: {text}")
 
 parent_dir = dirname(dirname(abspath(__file__)))
+
+parent_dir = join()
+
 print_log(f"{parent_dir = }")
 # config_dir = join(, "config")
 
