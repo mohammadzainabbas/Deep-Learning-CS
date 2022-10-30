@@ -16,6 +16,7 @@ dependencies:
   - hydra-core
   - omegaconf
   - notebook
+  - scipy
 
   ## PyPI packages
   - pip:
