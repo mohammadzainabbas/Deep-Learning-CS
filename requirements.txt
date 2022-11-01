@@ -1,0 +1,6 @@
+torch
+transformers
+diffusers==0.3.0
+numpy
+pillow
+tqdm
