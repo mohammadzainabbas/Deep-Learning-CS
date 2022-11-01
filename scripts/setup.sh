@@ -79,13 +79,13 @@ conda_init() {
 
 install_conda() {
     if [ ! $(type -p conda) ]; then
-        error "'anaconda' not found. Installing it now ..."
+        error "'conda' not found. Installing it now ..."
         wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p $HOME/miniconda
         export PATH="$HOME/miniconda/bin:$PATH"
         conda update --yes conda
     else
-        log "'anaconda' found ..."
+        log "'conda' found ..."
     fi
 }
 
