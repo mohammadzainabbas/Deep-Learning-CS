@@ -21,7 +21,7 @@ error () {
 function usage()
 {
 cat << HEREDOC
-Setup for TPC-DS benchmark
+Setup for the Deep Learning Project
 Usage: 
     
     $progname [OPTION] [Value]
@@ -29,7 +29,7 @@ Options:
     -h, --help              Show usage
 Examples:
     $ $progname
-    ⚐ → Installs all dependencies for your TPC-DS project.
+    ⚐ → Installs all dependencies for your Deep Learning project.
 HEREDOC
 }
 
