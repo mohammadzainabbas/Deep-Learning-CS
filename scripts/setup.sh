@@ -96,8 +96,8 @@ create_conda_env() {
 
 log "Starting Setup Service"
 
-# install_brew
-# install_git
+install_brew
+install_git
 install_conda
 create_conda_env
 
