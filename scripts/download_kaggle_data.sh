@@ -66,7 +66,7 @@ setup_kaggle_env() {
 }
 
 download_kaggle_data() {
-    kaggle competitions download -c gan-getting-started -p $data_dir --force
+    kaggle competitions download -c gan-getting-started -p "$data_dir" --force
 }
 
 install_git() {
