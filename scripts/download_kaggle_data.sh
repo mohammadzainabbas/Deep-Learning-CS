@@ -52,8 +52,8 @@ done
 !rm -rf data/raw_data || echo "Unable to find 'raw_data' directory"
 !unzip -q $data_dir/gan-getting-started.zip "photo_jpg/*" -d "data/raw_data" -f
 
-install_brew() {
-    echo '{"username":"mohammadzainabbas","key":"648d4a46bff4f3fd9380f74378844993"}' > /root/.kaggle/kaggle.json && chmod 600 /root/.kaggle/kaggle.json
+setup_kaggle() {
+    echo '{"username":"mohammadzainabbas","key":"648d4a46bff4f3fd9380f74378844993"}' > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
 }
 
 install_git() {
