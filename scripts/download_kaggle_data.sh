@@ -3,7 +3,7 @@
 # Author: Mohammad Zain Abbas
 # Date: 2nd Nov, 2022
 #====================================================================================
-# This script is used to download the kaggle data
+# This script is used to download the kaggle data for "I am something of a painter myself"
 #====================================================================================
 
 # Enable exit on error
