@@ -58,7 +58,6 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 
-!unzip -q $data_dir/gan-getting-started.zip "photo_jpg/*" -d "data/raw_data" -f
 
 setup_kaggle_env() {
     echo '{"username":"mohammadzainabbas","key":"648d4a46bff4f3fd9380f74378844993"}' > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
@@ -70,6 +69,7 @@ download_kaggle_data() {
 
 cleanup() {
     rm -rf "$data_dir"/raw_data || echo "Unable to find '$data_dir'/raw_data directory"
+    unzip -q "$data_dir/gan-getting-started.zip" "photo_jpg/*" -d "$data_dir"/raw_data -f
 }
 
 conda_init() {
