@@ -48,7 +48,8 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-!kaggle competitions download -c gan-getting-started -p $data_dir --force
+data_dir='data'
+
 !rm -rf data/raw_data || echo "Unable to find 'raw_data' directory"
 !unzip -q $data_dir/gan-getting-started.zip "photo_jpg/*" -d "data/raw_data" -f
 
@@ -57,7 +58,7 @@ setup_kaggle_env() {
 }
 
 download_kaggle_data() {
-    echo '{"username":"mohammadzainabbas","key":"648d4a46bff4f3fd9380f74378844993"}' > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
+    kaggle competitions download -c gan-getting-started -p $data_dir --force
 }
 
 install_git() {
