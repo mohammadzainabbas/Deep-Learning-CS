@@ -70,10 +70,12 @@ cleanup() {
     unzip -q "$data_dir/gan-getting-started.zip" "photo_jpg/*" -d "$data_dir"/raw_data -f
 }
 
-log "Starting Setup Service"
 
+log "Setting up kaggle enviornment ..."
 setup_kaggle_env
+log "Downloading kaggle data ..."
 download_kaggle_data
+log "Cleanup ..."
 cleanup
 
 log "All done !!"
