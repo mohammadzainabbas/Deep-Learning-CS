@@ -42,7 +42,7 @@ HEREDOC
 }
 
 progname=$(basename $0)
-data_dir='data'
+data_dir="data"
 
 #Get all the arguments and update accordingly
 while [[ "$#" -gt 0 ]]; do
