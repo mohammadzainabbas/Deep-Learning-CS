@@ -34,7 +34,6 @@ HEREDOC
 }
 
 progname=$(basename $0)
-env_name='deep_learning_project'
 
 #Get all the arguments and update accordingly
 while [[ "$#" -gt 0 ]]; do
