@@ -75,7 +75,7 @@ log "Setting up kaggle enviornment ..."
 setup_kaggle_env
 log "Downloading kaggle data ..."
 download_kaggle_data
-log "Cleanup ..."
+log "Cleanup and unzipping the data ..."
 cleanup
 
 log "All done !!"
