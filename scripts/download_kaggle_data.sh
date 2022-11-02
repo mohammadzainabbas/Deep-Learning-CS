@@ -1,9 +1,9 @@
 #!/bin/bash
 #====================================================================================
 # Author: Mohammad Zain Abbas
-# Date: 28th Oct, 2022
+# Date: 2nd Nov, 2022
 #====================================================================================
-# This script is used to set up the enviorment & installations
+# This script is used to download the kaggle data
 #====================================================================================
 
 # Enable exit on error
