@@ -69,7 +69,7 @@ download_kaggle_data() {
 }
 
 cleanup() {
-    rm -rf "$data_dir"/raw_data || echo "Unable to find 'raw_data' directory"
+    rm -rf "$data_dir"/raw_data || echo "Unable to find '$data_dir'/raw_data directory"
 }
 
 conda_init() {
