@@ -21,7 +21,9 @@ error () {
 function usage()
 {
 cat << HEREDOC
-Setup for the Deep Learning Project
+
+Download kaggle data for the Deep Learning Project
+
 Usage: 
     
     $progname [OPTION] [Value]
@@ -34,7 +36,7 @@ Options:
 Examples:
 
     $ $progname
-    ⚐ → Download data for your Deep Learning project.
+    ⚐ → Download kaggle data for your Deep Learning project.
 
 HEREDOC
 }
