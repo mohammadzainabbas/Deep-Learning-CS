@@ -58,7 +58,6 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 
-!rm -rf data/raw_data || echo "Unable to find 'raw_data' directory"
 !unzip -q $data_dir/gan-getting-started.zip "photo_jpg/*" -d "data/raw_data" -f
 
 setup_kaggle_env() {
@@ -69,13 +68,8 @@ download_kaggle_data() {
     kaggle competitions download -c gan-getting-started -p "$data_dir" --force
 }
 
-install_git() {
-    if [ ! $(type -p git) ]; then
-        error "'git' not found. Installing it now ..."
-        brew install git
-    else
-        log "'git' found ..."
-    fi
+cleanup() {
+    rm -rf data/raw_data || echo "Unable to find 'raw_data' directory"
 }
 
 conda_init() {
