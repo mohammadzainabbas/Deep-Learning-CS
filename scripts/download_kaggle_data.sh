@@ -57,8 +57,6 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-
-
 setup_kaggle_env() {
     echo '{"username":"mohammadzainabbas","key":"648d4a46bff4f3fd9380f74378844993"}' > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
 }
@@ -74,9 +72,8 @@ cleanup() {
 
 log "Starting Setup Service"
 
-install_brew
-install_git
-install_conda
-create_conda_env
+setup_kaggle_env
+download_kaggle_data
+cleanup
 
 log "All done !!"
