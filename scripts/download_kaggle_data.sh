@@ -34,7 +34,7 @@ Options:
 Examples:
 
     $ $progname
-    ⚐ → Installs all dependencies for your Deep Learning project.
+    ⚐ → Download data for your Deep Learning project.
 
 HEREDOC
 }
