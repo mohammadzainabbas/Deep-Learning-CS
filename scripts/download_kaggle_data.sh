@@ -41,7 +41,7 @@ Examples:
 HEREDOC
 }
 
-progname=$(basename $0)
+progname=$(basename "$0")
 data_dir="data"
 
 #Get all the arguments and update accordingly
