@@ -25,11 +25,17 @@ Setup for the Deep Learning Project
 Usage: 
     
     $progname [OPTION] [Value]
+
 Options:
+
+    -p, --path              Path for data to be stored. (by default uses 'data')
     -h, --help              Show usage
+
 Examples:
+
     $ $progname
     ⚐ → Installs all dependencies for your Deep Learning project.
+
 HEREDOC
 }
 
