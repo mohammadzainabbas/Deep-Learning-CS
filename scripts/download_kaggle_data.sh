@@ -72,34 +72,6 @@ cleanup() {
     unzip -q "$data_dir/gan-getting-started.zip" "photo_jpg/*" -d "$data_dir"/raw_data -f
 }
 
-conda_init() {
-    conda init --all || error "Unable to conda init ..."
-    if [[ $SHELL == *"zsh"* ]]; then
-        . ~/.zshrc
-    elif [[ $SHELL == *"bash"* ]]; then
-        . ~/.bashrc
-    else
-        error "Please restart your shell to see effects"
-    fi
-}
-
-install_conda() {
-    if [ ! $(type -p conda) ]; then
-        error "'conda' not found. Installing it now ..."
-        wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-        bash miniconda.sh -b -p $HOME/miniconda
-        export PATH="$HOME/miniconda/bin:$PATH"
-        conda update --yes conda
-    else
-        log "'conda' found ..."
-    fi
-}
-
-create_conda_env() {
-    conda create -n $env_name python=3 -y || error "Unable to create new env '$env_name' ..."
-    conda activate $env_name &> /dev/null || echo "" > /dev/null
-}
-
 log "Starting Setup Service"
 
 install_brew
