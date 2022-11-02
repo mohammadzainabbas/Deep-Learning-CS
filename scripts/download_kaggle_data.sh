@@ -42,10 +42,12 @@ HEREDOC
 }
 
 progname=$(basename $0)
+data_dir='data'
 
 #Get all the arguments and update accordingly
 while [[ "$#" -gt 0 ]]; do
     case $1 in
+        -p|--path) data_dir="$2"; shift ;;
         -h|--help)
         usage
         exit 1
@@ -55,7 +57,6 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-data_dir='data'
 
 !rm -rf data/raw_data || echo "Unable to find 'raw_data' directory"
 !unzip -q $data_dir/gan-getting-started.zip "photo_jpg/*" -d "data/raw_data" -f
